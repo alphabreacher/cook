@@ -15,13 +15,13 @@
 	</head>
 	<body>
 		<div id="container"></div>
-		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">three.js webgl</a> - molecules</div>
+		<div id="info"><a href="https://threejs.org" target="_blank" rel="noopener">moleviewer </a> - webgl</div>
 
 		<script type="importmap">
 			{
 				"imports": {
-					"three": "../build/three.module.js",
-					"three/addons/": "./jsm/"
+					"three": "/three.module.js",
+					"three/": "./jsm/"
 				}
 			}
 		</script>
@@ -30,10 +30,10 @@
 
 			import * as THREE from 'three';
 
-			import { TrackballControls } from 'three/addons/controls/TrackballControls.js';
-			import { PDBLoader } from 'three/addons/loaders/PDBLoader.js';
-			import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
-			import { GUI } from 'three/addons/libs/lil-gui.module.min.js';
+			import { TrackballControls } from '/TrackballControls.js';
+			import { PDBLoader } from '/PDBLoader.js';
+			import { CSS2DRenderer, CSS2DObject } from '/CSS2DRenderer.js';
+			import { GUI } from '/lil-gui.module.min.js';
 
 			let camera, scene, renderer, labelRenderer;
 			let controls;
